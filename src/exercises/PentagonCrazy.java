@@ -38,5 +38,20 @@ public class PentagonCrazy {
 
 	public static void main(String[] args) {
 		new PentagonCrazy().makePrettyThings();
+		Robot t800 = new Robot();
+		
+		t800.penDown();
+		t800.setSpeed(10);
+		t800.setPenColor(Color.red);
+
+		int sides = 10;
+		int angle = 360/sides;
+
+
+		for (int i = 0; i < 200; i++) {
+			t800.move(i);
+			t800.turn(angle);
+		}
+
 	}
-}
+} 
